@@ -1,11 +1,9 @@
 package ru.netology.java.qa59;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class TaskTest {
+public class TaskTest {
     @Test
     public void testMatchesForSimpleTaskIfTrue() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
@@ -81,7 +79,7 @@ class TaskTest {
     @Test
     public void testMatchesMeetingTopicIfFalse() {
         Meeting meeting = new Meeting(
-                555,
+                   555,
                 "Выкатка 3й версии приложения",
                 "Приложение НетоБанка",
                 "Во вторник после обеда"
